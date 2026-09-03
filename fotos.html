@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário - Fotos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Sniglet' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <script src="scriptpalavra.js" defer></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 titlestyle">
+                <banner>
+                    <h1 class="automatizar-palavras">Aniversário de 1 ano de namoro :3</h1>
+                </banner>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <main>
+                    <p class="automatizar-palavras pesp">* Eita amorrrr, aqui tem fotos só pra você~~7</p>
+                </main>
+            </div>
+        </div>
+        <div class="row novo">
+            <div class="col-md-4">
+                <main>
+                    <div class="card" style="width: 100%;">
+                        <img src="Untitled182_20260903152042.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Meus pés >wO</h5>
+                            <a href="fotes1.html" class="btn btn-primary">Ir</a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div class="col-md-4">
+                <main>
+                    <div class="card" style="width: 100%;">
+                        <img src="Untitled182_20260903152042.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Meu rosto >~<</h5>
+                            <a href="fotes2.html" class="btn btn-primary">Ir</a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div class="col-md-4">
+                <main>
+                    <div class="card" style="width: 100%;">
+                        <img src="Untitled182_20260903152042.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Minha bunda >.<</h5>
+                            <a href="fotes3.html" class="btn btn-primary">Ir</a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script>
+        const blocosDeTexto = document.querySelectorAll('.automatizar-palavras:not(.especial)');
+
+        blocosDeTexto.forEach(bloco => {
+
+            const palavras = bloco.innerText.split(' ');
+
+            bloco.innerHTML = palavras
+                .map(palavra => `<span>${palavra}</span>`)
+                .join(' ');
+
+        });
+
+        const somXXX = new Audio('Dialog_defaultTalk.ogg');
+        const somYYY = new Audio('sansUndertale.mp3');
+
+        somXXX.volume = 0.05;
+        somYYY.volume = 0.1;
+
+        document.querySelectorAll('.automatizar-palavras:not(.especial) span').forEach(palavra => {
+
+            palavra.addEventListener('mouseenter', () => {
+                somXXX.currentTime = 0;
+                somXXX.play();
+            });
+
+        });
+
+        document.querySelectorAll('.especial').forEach(elemento => {
+
+            elemento.addEventListener('mouseenter', () => {
+                somYYY.currentTime = 0;
+                somYYY.play();
+            });
+
+        });
+
+        function tentar() {
+            const input = document.getElementById('exampleFormControlInput1');
+            const valor = input.value.trim().toLowerCase();
+
+            if (valor === 'amorzinho') {
+                window.location.href = 'mensagem.html';
+            } else {
+                document.getElementById('falhas').innerHTML = 'Não é isso, tente novamente :3';
+            }
+        }
+    </script>
+</body>
+
+</html>

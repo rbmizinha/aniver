@@ -1,0 +1,111 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Sniglet';
+    background-image: url("Picsart_26-08-30_22-21-40-910.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 65%;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.container-fluid {
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.automatizar-palavras span {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+    cursor: default;
+    margin-right: 4px;
+    /* Garante o espacinho correto entre as palavras */
+}
+
+.automatizar-palavras span:hover {
+    transform: scale(1.3);
+    color: #e6c4ff;
+    background-color: #a028fc;
+    transform: rotate(--angulo-random, 0deg);
+
+}
+
+banner h1 {
+    background-color: #a028fc;
+    color: rgb(89, 3, 97);
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    height: 60px;
+    line-height: 60px;
+}
+
+.pesp {
+    display: inline;
+    margin: 0;
+}
+
+main {
+    background-color: #e6c0ff;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+h6, h6 a{
+    color: #e6c0ff;
+}
+
+.especial {
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive !important;
+}
+
+
+.col-md-3, .col-md-6, .col-md-12, .col-md-4 {
+    background-color: #e6c0ff;
+}
+
+.titlestyle{
+    background-color: #a028fc;
+    color: rgb(89, 3, 97);
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    height: 60px;
+    line-height: 60px;
+}
+
+footer {
+    background-color: #e6c0ff;
+    padding: 10px;
+}
+
+footer h1 {
+    text-align: center;
+}
+
+.garant {
+    display:block !important;
+}
+
+.novo{
+    height:100vh;
+    background-color: #e6c0ff; 
+}
